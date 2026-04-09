@@ -982,7 +982,7 @@
                 document.getElementById('moleTime').textContent = `Time: ${moleTimeLeft}s`;
                 document.getElementById('moleTimerFill').style.width = ((moleTimeLeft / 30) * 100) + '%';
                 if (moleTimeLeft <= 0) stopMole();
-            }, 1000);
+            }, 1500);
             moleSpawn();
             moleSpawnTimer = setInterval(moleSpawn, 900);
         }
@@ -1012,7 +1012,7 @@
             hole.textContent = '💥';
             moleScoreVal += 10;
             document.getElementById('moleScore').textContent = 'Score: ' + moleScoreVal;
-            setTimeout(() => { hole.classList.remove('whacked'); hole.textContent = ''; }, 500);
+            setTimeout(() => { hole.classList.remove('whacked'); hole.textContent = ''; }, 300);
         }
 
         function moleEnd() {
